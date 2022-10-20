@@ -12,6 +12,7 @@ class TaskCreateForm(forms.ModelForm):
 
 		# specify fields to be used
 		fields = [
+			"create_datetime",
 			"description",
 			"due_datetime",
 		]
