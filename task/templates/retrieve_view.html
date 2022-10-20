@@ -1,0 +1,14 @@
+<div class="main">
+
+	{% for data in dataset %}
+	{{ data.id }}<br/>
+	{{ data.description }}<br/>
+	{{ data.status }}<br/>
+	{{ data.due_datetime }}<br/>
+	{{ data.create_datetime }}<br/>
+	{{ data.completed_datetime }}<br/>
+	<hr/>
+
+	{% endfor %}
+
+</div>
