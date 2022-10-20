@@ -19,7 +19,7 @@ class TaskModel(models.Model):
         default='p'
     )
     due_datetime = models.DateTimeField()
-    create_datetime = models.DateTimeField()#auto_now_add=True)
+    create_datetime = models.DateTimeField()
     completed_datetime = models.DateTimeField(default=None, blank=True, null=True)
     # renames the instances of the model
 	# with their title name
