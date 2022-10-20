@@ -5,7 +5,7 @@ The service should perform CRUD operations on a database of to-do records. The s
 ### To-Do List Record Example:
 | Primary Key | Creation Datetime | Due Datetime | Completed Datetime | Task Description | Status |
 | ------ | ------ | ------ | ----- | ----- | ----- |
-| str | str, Unix timestamp in seconds | str, Unix timestamp in seconds | str, Unix timestamp in seconds | str | str, `pending` `late` `completed`|
+| str | str, datetime | str, datetime | str, datetime | str | str, `pending` `late` `completed`|
 
 ###  Required
 - [x] The service should provide valid and appropriate HTTP responses for the type of API resource request.
