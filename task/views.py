@@ -4,7 +4,7 @@ from django.shortcuts import (get_object_or_404,
 # relative import of forms
 from .models import TaskModel
 from .forms import TaskCreateForm, TaskUpdateForm
-
+from datetime import datetime
 
 def create_view(request):
 	# dictionary for initial data with
@@ -12,7 +12,7 @@ def create_view(request):
 	context ={}
 
 	# add the dictionary during initialization
-	form = TaskCreateForm(request.POST or None)
+	form = TaskCreateForm(request.POST or None, initial={'create_datetime': datetime.today().strftime('%Y-%m-%d %H:%M:%S')})
 	if form.is_valid():
 		form.save()
 		
