@@ -47,7 +47,7 @@ The server can be viewed at `http://127.0.0.1:8000/`
 The home page shows all of the to-do list tasks. Good feature improvements would be to have the view compare the currenttime/due date to set the status value before display
 
 ### Create Page
-The create page allows the user to set the due date and description. The status defaults to `pending` by default and should be updated as a part of the home page view. The current datetime should be calculated as part of the backend of this view but the feature is not implemented.
+The create page allows the user to set the due date and description. The status defaults to `pending` by default and should be updated as a part of the home page view. The current datetime is autofilled by default.
 `http://127.0.0.1:8000/create/`
 Valid Input Formats:
 ```
